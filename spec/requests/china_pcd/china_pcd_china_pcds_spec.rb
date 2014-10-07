@@ -24,8 +24,8 @@ RSpec.describe "ChinaPcds", :type => :request do
       context 'select empty parent' do
         it "city and district" do
           within '.ajax-helper' do
-            select '', :from => '--省份--'
-            expect(find('.city-city').value).to be_blank
+            # select '', :from => '--省份--'
+            # expect(find('.city-city').value).to be_blank
             # expect(find('.city-district').value).to be_blank
             # sleep 2
             # expect(all('.city-city option').size).to eql 1

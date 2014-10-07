@@ -7,7 +7,7 @@ module ChinaPcd
   class << self
 
     def list(parent_id = '000000')
-      if parent_id == '000000'
+      if parent_id == CHINA
         return provinces
       end
       id_match = match parent_id
@@ -19,7 +19,8 @@ module ChinaPcd
     end
 
     def fetch(code = '000000')
-      if code == '000000'
+      return [] if code.blank?
+      if code == CHINA
         return provinces true
       elsif province?(code)
         return cities code, true
@@ -78,7 +79,7 @@ module ChinaPcd
     end
 
     def province?(code)
-      code != '000000' && code.end_with?('0000')
+      code != CHINA && code.end_with?('0000')
     end
 
     def city?(code)
