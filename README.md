@@ -3,6 +3,7 @@
 中国省市区 的rails engine
 大量借鉴参考了 https://github.com/saberma/china_city
 也是我的第一个rails plugin engine
+数据添加了简单添加了港澳台
 
 ## 安装
 
