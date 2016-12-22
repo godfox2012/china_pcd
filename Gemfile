@@ -1,4 +1,4 @@
-source 'http://ruby.taobao.org'
+source 'https://gems.ruby-china.org'
 
 # Declare your gem's dependencies in china_pcd.gemspec.
 # Bundler will treat runtime dependencies like base dependencies, and
@@ -11,5 +11,6 @@ gemspec
 # your gem to rubygems.org.
 gem 'jquery-rails'
 gem 'coffee-rails'
+gem 'rails-controller-testing'
 # To use debugger
 # gem 'debugger'
